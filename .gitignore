@@ -32,3 +32,6 @@ node_modules
 /vendor/
 
 /Public/app/webroot/tmp/
+
+# Runtime deployer (tracked source is under .deploy/)
+/__deploy/

@@ -1,0 +1,11 @@
+Options -Indexes
+DirectoryIndex index.php
+
+AuthType Basic
+AuthName "SCHOOL Deploy"
+AuthUserFile /home/heartf/.htpasswd_school_deploy
+Require valid-user
+
+<FilesMatch "^(\.ht|.*\.(log|jsonl))$">
+    Require all denied
+</FilesMatch>

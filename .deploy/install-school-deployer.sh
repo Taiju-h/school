@@ -45,7 +45,7 @@ else
     echo "Creating Basic authentication user: $DEPLOY_USER"
     htpasswd -c "$PASSWORD_FILE" "$DEPLOY_USER"
 fi
-chmod 600 "$PASSWORD_FILE"
+chmod 604 "$PASSWORD_FILE"
 
 echo 'OK: SCHOOL Deployer installed.'
 echo 'URL: https://school.heartf.com/__deploy/'

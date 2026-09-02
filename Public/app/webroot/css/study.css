@@ -1,0 +1,394 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	color: #666;
+	text-align: center;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	background-image: url("/images/kindan_bg.jpg");
+	background-size: cover;
+}
+
+.red { color:#E70123; }
+
+.orange { color:#FE6C01; }
+
+.blue { color:#1205FA; }
+
+.font_small {
+	font-size:10px;
+}
+
+.border {
+	border: 1px solid #CCC; }
+
+/* ~~ エレメント / タグセレクター ~~ */
+ul, ol, dl {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	padding: 0px;
+}
+
+h1 {
+	font-size:12px;
+	font-weight:normal;
+	margin-bottom:0px;
+	text-align:right;
+}
+
+h2 {
+	margin-bottom:15px;
+	font-size: 18px;
+	color: #827B4A;
+	height: 40px;
+	padding-left: 25px;
+	line-height: 36px;
+	clear: both;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #F49B31;
+	background-image: url(../img/h2_left.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+h3 {
+	margin: 0px;
+	padding:0px;
+	font-size: 18px;
+	line-height: 32px;
+	font-weight: normal;
+	color: #716240;
+	clear: both;
+}
+
+h4 {
+	margin-bottom:5px;
+	font-size: 16px;
+	color: #F90;
+}
+
+p {
+	margin-bottom:10px;
+}
+
+a img {
+	border: none;
+}
+
+a:link {
+	text-decoration: underline;
+}
+
+a:visited {
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+}
+
+p {
+	margin-top:0px;
+	margin-bottom:15px;
+}
+
+.content {
+	width:980px;
+	margin-left:auto;
+	margin-right:auto;
+	overflow:hidden;
+}
+
+.study_content {
+	width:480px;
+	float: left;
+	padding-right:10px;
+}
+
+.study_content_left {
+	width:480px;
+	float:left;
+}
+
+.study_shell {
+	width:480px;
+	overflow:hidden;
+	background-image: url(../img/shell_s.jpg);
+	background-repeat: repeat-y;
+}
+
+.study_shell li{
+	list-style:none;
+}
+
+.study_thumb {
+	width:84px;
+	padding-left:14px;
+	padding-right:8px;
+	float:left;
+	padding-bottom: 20px;
+	background-image: url(../img/book_close_s.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 75px;
+	padding-top: 60px;
+}
+
+.study_thumb a{
+	color:#FFFFFF;
+	text-decoration:none;
+	display:block;
+	width:100%;
+	height:70px;
+	font-weight: bold;
+	line-height: 16px;
+	margin-left: 3px;
+}
+
+.study_open {
+	width:84px;
+	padding-left:5px;
+	padding-right:5px;
+	float:left;
+	padding-bottom: 10px;
+	background-image: url(../img/book_open_s.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 95px;
+	padding-top: 50px;
+}
+
+.study_open a{
+	list-style:none;
+}
+
+.study_mokuji {
+	width:480px;
+	background-image: url(../img/book_mokuji_s.png);
+	background-repeat: no-repeat;
+	height: 390px;
+	padding-top: 40px;
+	margin-top: 30px;
+}
+
+.study_mokuji li{
+	font-size: 14px;
+	background-image: url(../img/gakusyu_icon_s.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 10px;
+	padding-left: 25px;
+	line-height: 20px;
+	list-style-type: none;
+}
+
+.mokuji_text {
+	margin-left:30px;
+	height:330px;
+	width:390px;
+	overflow:auto;
+	text-align: left;
+}
+
+.mokuji_text {
+    column-count: 2;        /* カラムの数 */
+    column-gap: 10px;       /* カラム間のギャップ */
+    column-fill: auto;      /* テキストを自動的に次のカラムへ */
+    max-height: 210px;      /* コンテナの最大高さ */
+    overflow: auto;         /* 高さを超えたらスクロール */
+    padding-left:20px;
+}
+
+
+
+.contents_title {
+	background-image: url(../img/gakusyu_icon.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #C2E3D9;
+	font-size:18px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	text-align: left;
+	padding-left: 35px;
+	margin-top: 20px;
+}
+
+.contents_text {
+	margin-left:15px;
+	overflow:hidden;
+	text-align: left;
+}
+
+img {
+	display:block;
+}
+
+iframe {
+	width:100%;
+}
+
+.active {
+	display:inherit;
+}
+
+.study_open a{
+	color: #333;
+}
+
+.study_content2 {
+	width:480px;
+	margin-left:20px;
+	float: left;
+}
+
+@media screen and (max-width:480px){
+body {
+	font-size: 12px;
+	line-height: 16px;
+	zoom : 1.205;
+}
+
+.content {
+	width:320px;
+}
+
+.study_content {
+	width:320px;
+	float:none;
+}
+
+.study_content2 {
+	width:320px;
+	float:none;
+	margin-left:0px;
+}
+
+
+.study_content img{
+	max-width:320px;
+	height:auto;
+}
+
+.study_shell {
+	width:320px;
+	overflow:hidden;
+	-webkit-background-size:320px 100px; /* webkit系 */
+	background-size:320px 100px;
+	background-image: url(../img/sm/shell.jpg);
+}
+
+.study_thumb {
+	-webkit-background-size:90px 90px; /* webkit系 */
+	background-size:90px 90px;
+	width:64px;
+	padding-left:13px;
+	padding-right:10px;
+	float:left;
+	padding-bottom: 10px;
+	height: 60px;
+	padding-top: 30px;
+	margin-left:15px;
+	margin-right:0;
+}
+
+.study_thumb a{
+	text-decoration:none;
+	display:block;
+	width:100%;
+	height:60px;
+	font-weight: bold;
+}
+
+.study_open {
+	width:70px;
+	padding-left:10px;
+	padding-right:10px;
+	float:left;
+	padding-bottom: 0px;
+	padding-bottom:20px;
+	background-image: url(../img/book_open.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size:90px 90px; /* webkit系 */
+	background-size:90px 90px;
+	padding-top: 20px;
+	height:60px;
+	color: #333;
+}
+
+.study_mokuji {
+	width:320px;
+	-webkit-background-size:320px 287px; /* webkit系 */
+	background-size:320px 287px;
+	background-image: url(../img/book_mokuji.jpg);
+	background-repeat: no-repeat;
+	height: 257px;
+	padding-top: 30px;
+	margin-top: 30px;
+	text-align:left;
+}
+
+.study_mokuji li{
+	font-size: 12px;
+	-webkit-background-size:18px 18px; /* webkit系 */
+	background-size:18px 18px;
+	background-image: url(../img/gakusyu_icon.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	line-height: 14px;
+}
+
+.mokuji_text {
+	margin-left:20px;
+	height:230px;
+	width:280px;
+	overflow:auto;
+	text-align: left;
+}
+
+.contents_title {
+	width:290px;
+	-webkit-background-size:18px 18px; /* webkit系 */
+	background-size:18px 18px;
+	background-image: url(/images/gakusyu_icon.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-bottom: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #C2E3D9;
+	font-size:14px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	text-align: left;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.contents_text {
+	width:300px;
+	margin-left:10px;
+}
+
+h3 {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+}

@@ -1,0 +1,38 @@
+<?php
+$errmsg = $data['errmsg'];
+$p = $data['url'];
+$id = $p['id'];
+?>
+<h2><?php echo $p['name']?> の編集確認</h2>
+<form method="post" action="edit.php?id=<?php echo $id?>">
+<font color="red"><?php print $errmsg ?></font>
+<table>
+  <tr>
+    <th>圧縮名</th>
+    <td><?php echo $p['name']?></td>
+  </tr>
+  <tr>
+    <th>転送先</th>
+    <td><?php echo  $p['url']?></td>
+  </tr>
+  <tr>
+    <th>コメント</th>
+    <td><?php echo  $p['comment']?></td>
+  </tr>
+  <tr>
+    <th>カウンター初期値</th>
+    <td><?php echo  $p['count']?></td>
+  </tr>
+</table>
+<input type="hidden" name="url/id" value="<?php echo $id?>" />
+<input type="hidden" name="url/name" value="<?php echo $p['name']?>" />
+<input type="hidden" name="url/comment" value="<?php echo $p['comment']?>" />
+<input type="hidden" name="url/count" value="<?php echo $p['count']?>" />
+<input type="hidden" name="url/url" value="<?php echo $p['url']?>" />
+<input type="hidden" name="mode" value="confirm" />
+<p>
+上記のように変更します．よろしいですか？
+</p>
+<input type="submit" value="変更" />
+</form>
+<a href=".">back</a>

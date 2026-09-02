@@ -1,0 +1,29 @@
+<?php
+$p = $data['data'];
+$id = $p['id'];
+?>
+<form method="post" action="del.php">
+<h2><?php echo $s->html($p['name'])?> 削除してもよろしいですか?</h2>
+
+<table>
+  <tr>
+    <th>圧縮名</th>
+    <td><?php echo  $p['name']?></td>
+  </tr>
+  <tr>
+    <th>転送先</th>
+    <td><?php echo  $p['url']?></td>
+  </tr>
+  <tr>
+    <th>コメント</th>
+    <td><?php echo  $p['comment']?></td>
+  </tr>
+  <tr>
+    <th>カウント</th>
+    <td><?php echo  $p['count']?></td>
+  </tr>
+</table>
+<input type="hidden" name="id" value="<?php echo $id?>">
+<input type="submit" value=" 削除 ">
+<a href=".">back</a>
+</form>

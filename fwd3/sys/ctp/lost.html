@@ -1,0 +1,49 @@
+<script type="text/javascript">
+<!--
+
+function disp(uri){
+	if(window.confirm('本当に削除しますか？')){
+		location.href = uri; // example_confirm.html へジャンプ
+	}
+	else{
+	}
+}
+
+// -->
+</script>
+
+
+<h2>存在しないアクセス一覧</h2>
+<table>
+  <thead><tr>
+    <th>ID <a href="index.php?order=asc&key=id">▼</a><a href="index.php?order=desc&key=id">▲</a></th>
+    <th>圧縮名 <a href="index.php?order=asc&key=name">▼</a><a href="index.php?order=desc&key=name">▲</a></th>
+    <th>カウント <a href="index.php?order=asc&key=count">▼</a><a href="index.php?order=desc&key=count">▲</a></th>
+    <th style="width:200px;">操作</th>
+  </tr></thead>
+<?php foreach( $data["datas"] as $data ): ?>
+<?
+$name = $s->html($data['name']);
+?>
+
+
+  <tr>
+    <td><?php echo  $s->html($data['id']) ?></td>
+    <td><?php echo  $name ?></td>
+    <td><?php echo  $s->html($data['count']) ?></td>
+    <td>
+    <?php $query = '?id='.$data["id"]; ?>
+    	<a href="#" onclick="javascript:disp('lost_del.php<?php echo $query ?>')">削除</a>
+    </td>
+  </tr>
+<?php if(false):?>
+  <tr>
+    <td><?php print InitTime( $data["modified"] ); ?></td>
+  </tr>
+<?php endif;?>
+<?php endforeach; ?>
+</table>
+
+<p>存在しない短縮URLへのアクセスログです。数が多い物は、URLの表記間違いなどが考えられるため、<br />
+対応することでアクセスを有効に使えるようになります。</p>
+

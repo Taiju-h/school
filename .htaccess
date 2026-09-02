@@ -1,0 +1,149 @@
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+#RewriteEngine On
+#RewriteCond %{HTTPS} on
+#RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+
+
+#RewriteCond %{QUERY_STRING} アクセス
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9
+RewriteRule (.*) https://school.heartf.com/index.php?Access [R=301,L]
+
+#RewriteCond %{QUERY_STRING} キャンセル
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%82%AD%E3%83%A3%E3%83%B3%E3%82%BB%E3%83%AB
+RewriteRule (.*) https://school.heartf.com/index.php?Cancel [R=301,L]
+
+#RewriteCond %{QUERY_STRING} サイトマップ
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%82%B5%E3%82%A4%E3%83%88%E3%83%9E%E3%83%83%E3%83%97
+RewriteRule (.*) https://school.heartf.com/index.php?Sitemap [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 無料見学申込みフォーム
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E7%84%A1%E6%96%99%E8%A6%8B%E5%AD%A6%E7%94%B3%E8%BE%BC%E3%81%BF%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0
+RewriteRule (.*) https://school.heartf.com/index.php?InformationSession [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 講座一覧
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E8%AC%9B%E5%BA%A7%E4%B8%80%E8%A6%A7
+RewriteRule (.*) https://school.heartf.com/index.php?CourseNavi [R=301,L]
+
+#RewriteCond %{QUERY_STRING} スクールについて
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+RewriteRule (.*) https://school.heartf.com/index.php?AboutSchool [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 占い師お仕事講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E5%8D%A0%E3%81%84%E5%B8%AB%E3%81%8A%E4%BB%95%E4%BA%8B%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?FortuneTellingCourse [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 心理タロット講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E5%BF%83%E7%90%86%E3%82%BF%E3%83%AD%E3%83%83%E3%83%88%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?PsychologyTarot [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 手相占い講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E6%89%8B%E7%9B%B8%E5%8D%A0%E3%81%84%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?Palmistry [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 西洋占星術講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E8%A5%BF%E6%B4%8B%E5%8D%A0%E6%98%9F%E8%A1%93%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?WesternAstrology [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 数秘術講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E6%95%B0%E7%A7%98%E8%A1%93%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?Numerology [R=301,L]
+
+#RewriteCond %{QUERY_STRING} ライトヒプノ講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%83%A9%E3%82%A4%E3%83%88%E3%83%92%E3%83%97%E3%83%8E%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?LightHypno [R=301,L]
+
+#RewriteCond %{QUERY_STRING} ヒーリング療法士
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%83%92%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E7%99%82%E6%B3%95%E5%A3%AB
+RewriteRule (.*) https://school.heartf.com/index.php?Healing [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 心理タロット1日講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E5%BF%83%E7%90%86%E3%82%BF%E3%83%AD%E3%83%83%E3%83%881%E6%97%A5%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?Tarot1day [R=301,L]
+
+#RewriteCond %{QUERY_STRING} アストロダイス講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%82%A2%E3%82%B9%E3%83%88%E3%83%AD%E3%83%80%E3%82%A4%E3%82%B9%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?Astrodice [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 通信講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E9%80%9A%E4%BF%A1%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?TarotHomeStudy [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 特別開催講座
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E7%89%B9%E5%88%A5%E9%96%8B%E5%82%AC%E8%AC%9B%E5%BA%A7
+RewriteRule (.*) https://school.heartf.com/index.php?Special [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 占い放題
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E5%8D%A0%E3%81%84%E6%94%BE%E9%A1%8C
+RewriteRule (.*) https://school.heartf.com/index.php?AllFortuneTelling [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 学習コンテンツ
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E5%AD%A6%E7%BF%92%E3%82%B3%E3%83%B3%E3%83%86%E3%83%B3%E3%83%84
+RewriteRule (.*) https://school.heartf.com/index.php?LearningContents [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 講師の紹介
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E8%AC%9B%E5%B8%AB%E3%81%AE%E7%B4%B9%E4%BB%8B
+RewriteRule (.*) https://school.heartf.com/index.php?Teacher [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 会社概要
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E4%BC%9A%E7%A4%BE%E6%A6%82%E8%A6%81
+RewriteRule (.*) https://school.heartf.com/index.php?Company [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 通販支払いと配送方法
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E9%80%9A%E8%B2%A9%E6%94%AF%E6%89%95%E3%81%84%E3%81%A8%E9%85%8D%E9%80%81%E6%96%B9%E6%B3%95
+RewriteRule (.*) https://school.heartf.com/index.php?PaymentAndDelivery [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 特商法についての表記
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E7%89%B9%E5%95%86%E6%B3%95%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E8%A1%A8%E8%A8%98
+RewriteRule (.*) https://school.heartf.com/index.php?SpecialCommercialCode [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 個人情報保護表記
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E4%BF%9D%E8%AD%B7%E8%A1%A8%E8%A8%98
+RewriteRule (.*) https://school.heartf.com/index.php?PersonalInformation [R=301,L]
+
+#RewriteCond %{QUERY_STRING} メールが届かない場合
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E3%83%A1%E3%83%BC%E3%83%AB%E3%81%8C%E5%B1%8A%E3%81%8B%E3%81%AA%E3%81%84%E5%A0%B4%E5%90%88
+RewriteRule (.*) https://school.heartf.com/index.php?MailnotCome [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 決済完了
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E6%B1%BA%E6%B8%88%E5%AE%8C%E4%BA%86
+RewriteRule (.*) https://school.heartf.com/index.php?PaymentCompleted [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 生徒登録サイト
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E7%94%9F%E5%BE%92%E7%99%BB%E9%8C%B2%E3%82%B5%E3%82%A4%E3%83%88
+RewriteRule (.*) https://school.heartf.com/index.php?StudentRegistration [R=301,L]
+
+#RewriteCond %{QUERY_STRING} 講座追加サイト
+RewriteCond %{REQUEST_URI} /index.php
+RewriteCond %{QUERY_STRING} ^%E8%AC%9B%E5%BA%A7%E8%BF%BD%E5%8A%A0%E3%82%B5%E3%82%A4%E3%83%88
+RewriteRule (.*) https://school.heartf.com/index.php?CourseAddition [R=301,L]

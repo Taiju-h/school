@@ -1,0 +1,18 @@
+<?php
+$p = $data['url'];
+$star = '<span style="color:red">*</span>';
+?>
+<h2>圧縮URLの追加</h2>
+<p><?php echo $star?>が着いている項目は、必須です</p>
+<form method="post" action="add.php">
+<font color="red"><?php print $errmsg ?></font>
+圧縮名 <?php echo $star?><br />
+<input type="text" name="url/name" value="<?php echo $p['name']?>" /><br />
+転送先 <?php echo $star?><br />
+<input type="text" name="url/url" value="<?php echo $p['url']?>" /><br />
+コメント <br />
+<input type="text" name="url/comment" value="<?php echo $p['comment']?>" /><br />
+カウント初期値(基本的に0) <br />
+<input type="text" name="url/count" value="<?php echo $p['count']?>" /><br />
+<input type="submit" value="登録">
+</form>

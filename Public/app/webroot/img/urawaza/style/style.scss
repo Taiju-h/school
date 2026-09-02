@@ -1,0 +1,479 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fixed {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-wrap {
+    background-image: url(../image/main-bg-image.svg), url(../image/bg-image.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: right -200px top -120px, top left;
+    background-size: 853px, auto;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    @media screen and (max-width: 764px) {
+        background-position: right -150px top -100px, top left;
+        background-size: 653px, auto;
+    }
+
+    @media screen and (max-width: 550px) {
+        background-position: right -100px top -10px, top left;
+        background-size: 453px, auto;
+    }
+
+    .login-data {
+        font-size: 1.0em;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        background-color: rgba(243, 240, 227, 0.2);
+        padding: 1em;
+
+        .login-data__title {
+            color: #fff;
+            padding-bottom: 0.2em;
+        }
+
+        .data {
+            color: #fff;
+
+            div {
+                display: flex;
+                padding: 0.2em 0;
+
+                dt {
+                    width: 80px;
+                }
+
+                dd {
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    .main {
+        max-width: 1366px;
+        margin: 0 auto;
+
+        .main-title {
+            margin: 10% 0 7% 20px;
+            height: 250px;
+
+            @media screen and (max-width: 900px) {
+                height: 180px;
+            }
+
+            @media screen and (max-width: 700px) {
+                margin: 160px 0 70px 20px;
+                height: 120px;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+
+    }
+}
+
+.link-wrap {
+    width: 90%;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 50px;
+
+    @media screen and (max-width: 1366px) {
+        margin: 0 0 0 auto;
+        max-width: 900px;
+    }
+
+    .link-list {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        min-width: 1100px; //本棚含めた全体の横サイズ
+        margin: 0 auto;
+        position: relative;
+        padding-bottom: 120px; //本棚分 下を空ける
+        z-index: 1;
+
+        @media screen and (max-width:1366px) {
+            display: block;
+            min-width: 900px; //本棚含めた全体のサイズ
+            padding-bottom: 0;
+        }
+
+        @media screen and (max-width:764px) {
+            min-width: 750px; //本棚含めた全体のサイズ
+        }
+
+        @media screen and (max-width:550px) {
+            min-width: 500px; //本棚含めた全体のサイズ
+        }
+
+        //本棚
+        &::after {
+            @media screen and (min-width:1367px) {
+                content: "　";
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 120%;
+                max-width: 1350px;
+                height: 120px; //本棚の高さ 親のpadding-bottomと合わせる
+                background-image: url(../image/bookshelf-s.svg), url(../image/bookshelf-e.svg), url(../image/bookshelf-m.svg);
+                background-position: left top, right top, center top;
+                background-repeat: no-repeat, no-repeat, repeat;
+                z-index: 2;
+            }
+        }
+
+        //本棚の影
+        &::before {
+            @media screen and (min-width:1367px) {
+                display: block;
+                height: 170px; //影の高さ 本棚より高くしてその分bottomでマイナスにして頭は揃える
+                max-width: 1350px;
+                width: 110%;
+                content: "　";
+                position: absolute;
+                bottom: -51px; //blur分　1px 本棚より高い分をここで合わせる
+                right: -10%; //本棚の右端に合わせる為
+                z-index: 1;
+                transform-origin: right top;
+                transform: skewX(30deg);
+                background: rgb(1, 1, 1);
+                background: -moz-linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                background: -webkit-linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                background: linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                filter: blur(1px);
+            }
+        }
+
+        //２段の場合はこれでflex
+        .split2 {
+            display: flex;
+
+            @media screen and (max-width:1366px) and (min-width:765px) {
+                position: relative;
+                padding-bottom: 100px; //本棚分 下を空ける
+                z-index: 1;
+                justify-content: center;
+                margin: 0 0 20px 0;
+            }
+
+            @media screen and (max-width:764px) {
+                display: block;
+
+            }
+
+
+            //本棚
+            &::after {
+                @media screen and (max-width:1366px) and (min-width:765px) {
+                    content: "　";
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    max-width: 1350px;
+                    height: 100px; //本棚の高さ 親のpadding-bottomと合わせる
+                    background-image: url(../image/bookshelf-s.svg), url(../image/bookshelf-e.svg), url(../image/bookshelf-m.svg);
+                    background-position: left top, right top, center top;
+                    background-repeat: no-repeat, no-repeat, repeat;
+                    z-index: 2;
+                }
+            }
+
+            //本棚の影
+            &::before {
+                @media screen and (max-width:1366px) and (min-width:765px) {
+                    display: block;
+                    height: 150px; //影の高さ 本棚より高くしてその分bottomでマイナスにして頭は揃える
+                    max-width: 1350px;
+                    width: 110%;
+                    content: "　";
+                    position: absolute;
+                    bottom: -51px; //blur分　1px 本棚より高い分をここで合わせる
+                    right: -15%; //本棚の右端に揃えるため(見えないからあまり関係ない)
+                    z-index: 1;
+                    transform-origin: right top;
+                    transform: skewX(30deg);
+                    background: rgb(1, 1, 1);
+                    background: -moz-linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                    background: -webkit-linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                    background: linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                    filter: blur(1px);
+                }
+            }
+
+            //４段の場合はこれでflex
+            .split4 {
+                display: flex;
+
+                @media screen and (max-width:764px) {
+                    position: relative;
+                    z-index: 1;
+                    padding-bottom: 100px; //本棚分 下を空ける
+                    justify-content: center;
+                    margin: 0 0 20px 0;
+                }
+
+                @media screen and (max-width:550px) {
+                    padding-bottom: 80px; //本棚分 下を空ける
+                }
+
+                //本棚
+                &::after {
+                    @media screen and (max-width:764px) {
+                        content: "　";
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        max-width: 1350px;
+                        height: 100px; //本棚の高さ 親のpadding-bottomと合わせる
+                        background-image: url(../image/bookshelf-s.svg), url(../image/bookshelf-e.svg), url(../image/bookshelf-m.svg);
+                        background-position: left top, right top, center top;
+                        background-repeat: no-repeat, no-repeat, repeat;
+                        z-index: 2;
+                    }
+
+                    @media screen and (max-width:550px) {
+                        height: 80px; //本棚の高さ 親のpadding-bottomと合わせる
+                    }
+                }
+
+                //本棚の影
+                &::before {
+                    @media screen and (max-width:764px) {
+                        display: block;
+                        height: 150px; //影の高さ 本棚より高くしてその分bottomでマイナスにして頭は揃える
+                        max-width: 1350px;
+                        width: 110%;
+                        content: "　";
+                        position: absolute;
+                        bottom: -51px; //blur分　1px 本棚より高い分をここで合わせる
+                        right: -18%; //本棚の右端に揃えるため(見えないからあまり関係ない)
+                        z-index: 1;
+                        transform-origin: right top;
+                        transform: skewX(30deg);
+                        background: rgb(1, 1, 1);
+                        background: -moz-linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                        background: -webkit-linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                        background: linear-gradient(180deg, rgba(1, 1, 1, 0.500437675070028) 0%, rgba(0, 0, 0, 0.09987745098039214) 100%);
+                        filter: blur(1px);
+                    }
+
+                    @media screen and (max-width:550px) {
+                        height: 120px; //影の高さ 本棚より高くしてその分bottomでマイナスにして頭は揃える
+                        bottom: -41px; //blur分　1px 本棚より高い分をここで合わせる
+                        width: 105%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.link-item {
+    padding: 1.7em 1.0em 0 1.0em;
+    writing-mode: vertical-rl;
+    color: white;
+    background-image: url(../image/image-book.svg);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 4px 0 0 0;
+    height: 300px;
+
+    @media screen and (max-width: 1366px) {
+        font-size: 1.1em;
+    }
+
+    @media screen and (max-width: 764px) {
+        height: 240px;
+    }
+
+    &:hover {
+        filter: brightness(110%)
+    }
+
+    &.active {
+        filter: brightness(85%);
+    }
+
+    &.empty {
+        background-image: url(../image/image-book-last.svg);
+        width: 180px;
+        border-radius: 0 4px 4px 0;
+        filter: drop-shadow(2px 1px 1px #181818);
+
+        @media screen and (max-width: 764px) {
+            width: 150px;
+        }
+
+        &.empty1 {
+            @media screen and (min-width: 1367px) {
+                display: none;
+            }
+        }
+
+        &.empty2 {
+            @media screen and (min-width: 765px) {
+                display: none;
+            }
+        }
+    }
+}
+
+
+.contents-area {
+    position: relative;
+    opacity: 1;
+    transition: opacity 0.3s;
+
+    @media screen and (max-width:764px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 100;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &.is-hide {
+        @media screen and (max-width:764px) {
+            display: none;
+            opacity: 0;
+        }
+    }
+
+    .btn-close {
+        color: #fff;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 10;
+        width: 40px;
+        height: 40px;
+        filter: drop-shadow(0 0 5px #000);
+
+        @media screen and (min-width:765px) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .contents-bg-image {
+        width: 100%;
+
+        @media screen and (max-width:764px) {
+            max-height: 50vh;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .link-contents {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        padding: 3em;
+        top: 45%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0.7);
+
+        @media screen and (max-width:1000px) {
+            width: 60%;
+            height: 60%;
+            padding: 2em;
+        }
+
+        @media screen and (max-width:764px) {
+            width: 90%;
+            flex: 1;
+            max-width: 500px;
+            max-height: 50vh;
+            padding: 1.5em 1.2em;
+            position: relative;
+            top: auto;
+            left: auto;
+            right: auto;
+            transform: translateY(0);
+            border-radius: 10px;
+            margin-top: 60px;
+            background-color: rgba(255, 255, 255, 0.85);
+            filter: drop-shadow(0 0 4px #000);
+        }
+
+        &::before {
+            @media screen and (max-width:764px) {
+                content: "　";
+                position: absolute;
+                bottom: -40px;
+                left: 15%;
+                height: 40px;
+                width: 26px;
+                border-right: 13px solid transparent;
+                border-top: 40px solid rgba(255, 255, 255, 0.85);
+                border-left: 13px solid transparent;
+            }
+        }
+
+        li {
+            display: inline-block;
+            font-size: 1.3em;
+            background-image: url(../image/tag.svg);
+            background-repeat: no-repeat;
+            background-size: 1.1em 1.1em;
+            background-position: top left;
+            padding-left: 1.3em;
+            margin-right: 2em;
+            margin-bottom: 1em;
+
+            @media screen and (max-width:1000px) {
+                font-size: 1.15em;
+            }
+
+            @media screen and (max-width:764px) {
+                font-size: 1.10em;
+                margin-bottom: 0.7em;
+                margin-right: 1.5em;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.contents-data {
+    display: none;
+}

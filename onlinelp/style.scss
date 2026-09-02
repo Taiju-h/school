@@ -1,0 +1,918 @@
+@charset "UTF-8";
+@import "mixin.scss";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  text-align: center;
+  line-height: 1.8;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  @include sp{
+    line-height: 2;
+  }
+}
+
+#body {
+  text-align: left;
+}
+
+.red {
+  color: #FF6B6B;
+}
+
+.orange {
+  color: #fe6c01;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.bg-purple{
+  background-color: #F8F1FF;
+ }
+
+ .bg-bage{
+  background-color: #FFF9F1;
+ }
+
+.bg-blue{
+  background-color: #F1F6FF;
+ }
+
+
+.font_small {
+  font-size: 10px;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  padding: 0;
+}
+
+h2 {
+color: #FF8C21;
+padding: 1rem 0;
+text-align: center;
+font-family: "Noto Serif JP";
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+margin-bottom: 0;
+@include sp{
+ font-size: 22px;
+}
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: rgba(46, 116, 152, 1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  img {
+    border: none;
+  }
+
+  &:link, &:visited {
+    text-decoration: underline;
+  }
+
+  &:active, &:focus, &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+li{
+  list-style: none;
+}
+
+#container {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.clearfloat {
+  clear: both;
+  height: 0;
+  font-size: 1px;
+  line-height: 0;
+}
+
+.align_center {
+  text-align: center;
+}
+
+.m5 {
+  margin-top: 5px;
+}
+
+.m10 {
+  margin-top: 10px;
+}
+
+.m15 {
+  margin-top: 15px;
+}
+
+.m20 {
+  margin-top: 20px;
+}
+
+.m25 {
+  margin-top: 25px;
+}
+
+.m30 {
+  margin-top: 30px;
+}
+
+.m40 {
+  margin-top: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+
+article {
+  text-align: left;
+}
+
+.topic-3c{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 30%;
+    list-style: none;
+    position: relative;
+    @include sp{
+width: 100%;
+margin-bottom: 3rem;
+}
+h4{
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+    h3{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: -50%;
+      right: -50%;
+      line-height: 2;
+      display: block;
+      margin: 0 auto;
+      color: #576875;
+text-align: center;
+font-size: 26px;
+font-weight: 700;
+width: 300px;
+border-radius: 25px;
+background: #ECF1F9;
+    }
+    img{
+      margin: -5px auto 10px;
+      @include sp{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    p{
+      font-size: 28px;
+line-height: 1.2;
+font-weight: 700;
+    }
+    span{
+      color: #FF7A00;
+    }
+  }
+}
+
+.topic-4c{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 23%;
+    list-style: none;
+    position: relative;
+    @include sp{
+width: 100%;
+margin-bottom: 3rem;
+}
+h4{
+  font-size: 18px;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+    h3{
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      left: -50%;
+      right: -50%;
+      line-height: 2;
+      display: block;
+      margin: 0 auto;
+      color: #576875;
+text-align: center;
+font-size: 26px;
+font-weight: 700;
+width: 300px;
+border-radius: 25px;
+background: #ECF1F9;
+    }
+    img{
+      margin: -5px auto 10px;
+      @include sp{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+    p{
+      font-size: 28px;
+line-height: 1.2;
+font-weight: 700;
+    }
+    span{
+      color: #FF7A00;
+    }
+  }
+}
+
+ .content{
+    max-width: 1360px;
+    padding: 2.5rem 0;
+    margin: 0 auto;
+    @include sp{
+padding: 1.2rem;
+    }
+ }
+ .toku-midasi{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include sp{
+    padding: 0.5rem 0 0 0;
+  }
+  .ftf{
+    color: #BA9100;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Noto Serif JP";
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+img{
+  margin-right: 10px;
+}
+@include sp{
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: -20px;
+  img{
+    width: 60px;
+    height: auto;
+  }
+}
+  }
+  li{
+    list-style: none;
+    padding: 1.5rem 0;
+    width: 47%;
+    text-align: center;
+    font-size: 28px;
+font-style: normal;
+font-weight: 500;
+@include sp{
+  font-size: 17px;
+  text-align: left;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+  }
+ }
+
+ .lead{
+  font-size: 20px;
+  text-align: center;
+  @include sp{
+    font-size: 16px;
+    text-align: left;
+}
+ }
+
+ .bene{
+    background: linear-gradient(transparent 60%, #ff6 60%);
+    font-size: 105%;
+    font-weight: bold;
+ }
+
+ .title-pink{
+  color: #FF5454;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+@include sp{
+  font-size: 19px;
+  text-align: left;
+  line-height: 1.6;
+}
+ }
+
+ .toku-txt{
+  font-size: 18px;
+  text-align: left;
+  @include sp{
+  font-size: 16px;
+}
+ }
+
+ .match{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0;
+  ul{
+    width: 50%;
+  border-radius: 18px;
+background: #FFF6F6;
+padding: 2rem;
+@include sp{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+}
+li{
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0.2rem 0;
+  background-image: url(images/onmark.svg);
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 38px;
+  @include sp{
+  font-size: 18px;
+  padding: 0.5rem 0;
+  background-size: 18px;
+  padding-left: 24px;
+  line-height: 1.5;
+}
+}
+div{
+  font-size: 20px;
+  line-height: 2.5;
+  background-image: url(images/okey.png);
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-right: 140px;
+  @include sp{
+  padding-right: 85px;
+  background-size: 90px;
+  line-height: 2;
+  font-size: 18px;
+  background-position: 103% center;
+}
+}
+ }
+
+ .kasegi{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 49%;
+    line-height: 1.5;
+    @include sp{
+      line-height: 1.3;
+      text-align: center;
+    }
+    img{
+      float: left;
+      width: 120px;
+      height: auto;
+      @include sp{
+        display: block;
+        float: none;
+        margin: 10px auto;
+}
+    }
+    .forte{
+      font-size: 20px;
+    }
+    p{
+      color:#FF4545; ;
+    }
+    .money{
+      font-size: 34px;
+      @include sp{
+        font-size: 30px;
+      }
+    }
+  }
+ }
+
+ .kouza-topic{
+  margin-top: 1rem;
+  border-radius: 18px;
+border: 7px solid #68BEE3;
+background: #fbfaf4;
+padding: 2rem;
+@include sp{
+border: 5px solid #68BEE3;
+background: #fbfaf4;
+padding: 0.6rem;
+}
+h3{
+  color: #005DA0;
+text-align: center;
+font-size: 24px;
+font-style: normal;
+@include sp{
+ line-height: 1.3;
+ padding: 0;
+ margin: 0;
+ margin-bottom: 10px;
+}
+}
+li{
+  font-size: 20px;
+  text-align: left;
+  @include sp{
+    font-size: 18px;
+  }
+}
+div{
+  overflow: hidden;
+  padding: 1rem 0;
+  @include sp{
+    padding: 0;
+  }
+  p{
+    font-size: 22px;
+    text-align: left;
+    @include sp{
+    font-size: 18px;
+  }
+  }
+}
+img{
+  width: 160px;
+  height: auto;
+  float: left;
+  margin-right: 2rem;
+  @include sp{
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+}
+ }
+
+ .kouzamei{
+  display: flex;
+  flex-wrap: wrap;
+  p{
+    display: inline-block;
+    background-color:#25A6C2 ;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+    margin: 0.6rem;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    @include sp{
+  padding: 0.3rem;
+  margin: 0.3rem;
+  font-size: 18px;
+}
+  }
+ }
+
+ .kana-area{
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  font-size: 22px;
+  @include sp{
+    flex-wrap: wrap;
+    font-size: 18px;
+  }
+.first{
+  width: 60%;
+  @include sp{
+  width: 100%;
+}
+}
+.sec{
+  width: 35%;
+  @include sp{
+    width: 100%;
+  }
+}
+  iframe{
+    width: 100%;
+    height: 450px;
+    @include sp{
+      height: 250px;
+    }
+  }
+ }
+
+ .title-kanaeru{
+  font-size: 30px;
+  text-align: center;
+  color: #005DA0;
+  padding: 4rem 0 2rem;
+  margin-bottom: 0;
+  @include sp{
+ font-size: 22px;
+  padding: 2rem 0 1rem;
+}
+ }
+
+ .fuki{
+  border-radius: 18px;
+background: #FFF;
+padding: 2rem;
+width: 60%;
+padding-right: 200px;
+margin: 2rem auto;
+background-image: url(images/check.svg);
+background-size: 150px;
+background-repeat: no-repeat;
+background-position: 98% bottom;
+@include sp{
+  width: 100%;
+  padding: 1.3rem;
+padding-right: 100px;
+margin: 0 auto 1rem;
+font-size: 15px;
+background-size: 120px;
+background-position: 100% center;
+box-sizing: border-box;
+}
+ }
+
+.bg-htf{
+  background-image: url(images/htfbg.webp);
+  background-size: cover;
+}
+
+ .kousi-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 46%;
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #ffffff;
+    @include sp{
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 0.8rem;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      p{
+        margin-bottom: 0;
+      }
+}
+     h4{
+      color: #FF8C21;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      font-family: "Noto Serif JP";
+      @include sp{
+        font-size: 20px;
+      }
+     }
+    img{
+      width: 160px;
+      height: auto;
+      margin-right: 30px;
+      @include sp{
+        width: 140px;
+        margin: 0 auto;
+      }
+    }
+  }
+ }
+
+ .kousi-list2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li{
+    width: 46%;
+    display: flex;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #ffffff;
+    @include sp{
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      p{
+        margin-bottom: 0;
+      }
+}
+     h4{
+      color: #0698ce;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      font-family: "Noto Serif JP";
+      @include sp{
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+     }
+    img{
+      width: 120px;
+      height: auto;
+      margin-right: 30px;
+      @include sp{
+        width: 80px;
+        margin: 0 auto;
+        padding-right: 10px;
+      }
+    }
+  }
+ }
+
+ .kousi-list3{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  .kouzamei{
+    p{
+      font-size:16px ;
+      padding: 0.2rem 0.7rem;
+    }
+  }
+  li{
+    width: 46%;
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    padding: 1rem;
+    border-radius: 15px;
+    background: #ffffff;
+    border: 5px solid #68BEE3;
+    @include sp{
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 16px;
+      margin-bottom: 1rem;
+      p{
+        margin-bottom: 0;
+      }
+}
+     h4{
+      color: #136ca7;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      font-family: "Noto Serif JP";
+      @include sp{
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+     }
+    img{
+      width: 120px;
+      height: auto;
+      margin-right: 30px;
+      @include sp{
+        width: 80px;
+        margin: 0 auto;
+        padding-right: 10px;
+      }
+    }
+  }
+ }
+
+ .muryou-obi{
+  background-color:#88B920;
+  color: #ffffff;
+ }
+
+ .title-main{
+    display: flex;
+    align-items: center;
+    color: #D1A73C;
+    background-image: url(images/title-head.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size:100px ;
+    padding-top: 1.5rem;
+    font-weight: 500;
+    &:before{
+content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #D7BA71;
+    margin-right: 1rem;
+    }
+    &:after{
+content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #D7BA71;
+    margin-left: 1rem;
+    }
+    @include sp{
+      padding-bottom: 0;
+    }
+ }
+
+ .point{
+  display: flex;
+  justify-content: center;
+  color: #FE810E;
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+  @include sp{
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+  p{
+    background-image: url(images/onmark.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: left center;
+    padding: 20px 40px;
+    @include sp{
+      width: 100%;
+      padding: 0;
+      padding-left: 28px;
+      background-size: 20px;
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+ }
+
+ .pc{
+  @include sp{
+    display: none;
+  }
+ }
+
+ .sp{
+  display: none;
+  @include sp{
+    display: inherit;
+  }
+ }
+
+ .smunder_yoyaku {
+  display: none;
+   @include sp{
+  display: inherit;
+  padding-top: 0px;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f0edde;
+  z-index: 100;
+  color: #000000;
+   }
+}
+
+.smunder_btn{
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(255, 152, 67);
+  a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 3.53% 7px 3.53%;
+  background-image: url(images/mail-icon.svg);
+  background-position: 10% center;
+  background-size: 26px auto;
+  background-repeat: no-repeat;
+  }
+}
+
+.swiper-wrapper{
+  height: auto !important;
+  margin-bottom: 0.5rem;
+}
+
+.area-fol{
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: #06b0ce solid 3px;
+  @include sp{
+    padding: 1rem;
+  }
+  ul{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include sp{
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      font-size: 14px;
+    }
+  }
+  .fol-fis{
+    width: 43%;
+    @include sp{
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .fol-sub{
+    width: 53%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+@include sp{
+      width: 100%;
+    }
+div{
+  width: 48%;
+  margin-bottom: 2rem;
+  @include sp{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  h4{
+    margin-top: 1rem;
+  }
+}
+  }
+}
+
+main{
+  @include sp{
+    padding-bottom: 3rem;
+  }
+}

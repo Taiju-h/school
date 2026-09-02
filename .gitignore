@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+
+# Project
+qhm.ini.php
+attach/*
+cache/*
+cacheqblog/*
+cacheqhm/*
+counter/*
+wiki/*
+diff/*
+backup/*
+count/*
+swfu/d/*
+swfu/data/*
+skin/hokukenstyle/*
+vendor
+
+# Development
+node_modules
+.php-version
+
+/Public/app/webroot/files/
+
+/cache/
+/cacheqhm/
+/cacheqblog/
+/backup/
+/Public/app/tmp/
+/node_modules/
+/vendor/
+
+/Public/app/webroot/tmp/

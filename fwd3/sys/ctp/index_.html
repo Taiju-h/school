@@ -1,0 +1,44 @@
+<h2>圧縮URL一覧</h2>
+<p><a href="add.php">[+]転送先の追加</a></p>
+<table>
+  <thead><tr>
+    <th>ID <a href="index.php?order=asc&key=id">▼</a><a href="index.php?order=desc&key=id">▲</a></th>
+    <th>圧縮名 <a href="index.php?order=asc&key=name">▼</a><a href="index.php?order=desc&key=name">▲</a></th>
+    <th>転送先 <a href="index.php?order=asc&key=url">▼</a><a href="index.php?order=desc&key=url">▲</a></th>
+    <th>コメント <a href="index.php?order=asc&key=comment">▼</a><a href="index.php?order=desc&key=comment">▲</a></th>
+    <th>カウント <a href="index.php?order=asc&key=count">▼</a><a href="index.php?order=desc&key=count">▲</a></th>
+    <th style="width:200px;">操作</th>
+  </tr></thead>
+<?php foreach( $data["datas"] as $data ): ?>
+<?php
+$name = $s->html($data['name']);
+$click_name = <<<EOD
+<a href="{$base_url}/{$name}" onclick="" >{$name}</a>
+EOD;
+$url = $s->html($data['url']);
+$str = mb_convert_encoding( rawurldecode($url), 'UTF-8', 'UTF-8,EUC-JP,Shift_JIS,ASCII');
+$alias = strlen($url) > 50 ? substr($url, 0, 50).'...' : $url;
+$click_url = '<a href="'.$url.'" title="'.$str.'">'.$alias.'</a>';
+?>
+
+
+  <tr>
+    <td><?php echo  $s->html($data['id']) ?></td>
+    <td><?php echo  $click_name ?></td>
+    <td><?php echo  $click_url ?></td>
+    <td><?php echo  $s->html($data['comment']) ?></td>
+    <td><?php echo  $s->html($data['count']) ?></td>
+    <td>
+    <?php $query = '?id='.$data["id"]; ?>
+       	<a href="edit.php<?php echo $query ?>">編集</a>&nbsp;
+    	<a href="del.php<?php echo $query ?>">削除</a>
+    </td>
+  </tr>
+<?php if(false):?>
+  <tr>
+    <td><?php print InitTime( $data["modified"] ); ?></td>
+  </tr>
+<?php endif;?>
+<?php endforeach; ?>
+</table>
+<p><a href="lost.php">&gt;&gt;&gt; ロストURL一覧</a></p>

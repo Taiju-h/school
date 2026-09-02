@@ -1,0 +1,48 @@
+$color-blue:#051B72;
+$color-gr:#F8F4EF;
+$color-br:#B7A596;
+$color-br-l:#C1A88F;
+$color-br-d:#6A5943;
+$content-width:1200px;
+$bg-footer: #BB986C;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: space-between;
+}
+
+$topic-width:1200px;
+
+$font-min:游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,Georgia,メイリオ,Meiryo,serif;
+
+@mixin align-center {
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin nav-text {
+  color: inherit;
+  text-decoration: none;
+}
+
+$pc: 1200px; // PC
+$tab: 815px; // タブレット
+$sp: 550px; // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

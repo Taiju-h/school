@@ -1,0 +1,93 @@
+
+.contact_form {
+	width:100%;
+	background-color:#CCCCCC;
+	border:0;
+	color: #333;
+}
+
+.c_left {
+	width: 25%;
+	padding: 10px;
+	background-color: #B5CEE9;
+}
+
+.c_right {
+	padding:10px;
+	background-color: #F4FAFF;
+}
+.c_del {
+	width: 15%;
+	padding:10px;
+	background-color: #F4FAFF;
+}
+
+
+
+form div {
+	clear: both;
+	margin-bottom: 1em;
+	padding: 0em;
+	vertical-align: text-top;
+}
+form .input {
+	color: #444;
+}
+form .required {
+	font-weight: bold;
+}
+form .required label:after {
+	color: #e32;
+	content: '*';
+	display:inline;
+}
+form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 10px;
+}
+input, textarea {
+	clear: both;
+	font-size: 140%;
+	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
+	padding: 1%;
+	width:98%;
+}
+select {
+	clear: both;
+	font-size: 120%;
+	vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+	width: 100%;
+}
+option {
+	font-size: 120%;
+	padding: 0 3px;
+}
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+div.checkbox label {
+	display: inline;
+}
+input[type=radio] {
+	float:left;
+	width:auto;
+	margin: 6px 0;
+	padding: 0;
+	line-height: 26px;
+}
+.radio label {
+	margin: 0 0 6px 20px;
+	line-height: 26px;
+}
+input[type=submit] {
+	display: inline;
+	font-size: 110%;
+	width: auto;
+}
+form .submit input[type=submit] {

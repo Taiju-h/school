@@ -1,0 +1,73 @@
+Generated hash data: 2:item_jp_new_12:tx_8750:1728807126:lionking
+Hash: 50ac0544cfc8f9197b6c67aad8fffec4ffe3095d09a826ae3b12619f91453e81API Response: Generated hash data: 2:item_jp_new_12:tx_7368:1728807138:lionking
+Hash: 7c74eca9f790a1bc281575adb1e2d983e5f94ae652bd386f8b0f3db0e24ca30dAPI Response: Generated hash data: 2:item_jp_new_12:tx_7637:1728807159:lionking
+Hash: a25e1c805cc061c8523dbf2ff80f9129c4c98a197678a540bdb32492a776c489API Response: API Success: Redirecting to thanks pageUser Environment Info:
+IP Address: 59.129.225.81
+Host Name / Provider: KD059129225081.ppp-bb.dion.ne.jp
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+Server Info: Array
+(
+    [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+    [PWD] => /home/userfastcgi/heartf/heartf.com
+    [SHLVL] => 0
+    [SCRIPT_NAME] => /kanaeru/rep.php
+    [REQUEST_URI] => /kanaeru/rep.php?user_id=2&price=660&item_name=item_jp_new_12&transaction_id=txn_670b39457fbaa0.72737990_7085_1728788805&callback=my
+    [QUERY_STRING] => user_id=2&price=660&item_name=item_jp_new_12&transaction_id=txn_670b39457fbaa0.72737990_7085_1728788805&callback=my
+    [REQUEST_METHOD] => GET
+    [SERVER_PROTOCOL] => HTTP/1.1
+    [GATEWAY_INTERFACE] => CGI/1.1
+    [REMOTE_PORT] => 34360
+    [SCRIPT_FILENAME] => /home/heartf/heartf.com/public_html/school/kanaeru/rep.php
+    [SERVER_ADMIN] => webmaster@heartf.com
+    [CONTEXT_DOCUMENT_ROOT] => /home/heartf/heartf.com/public_html/school
+    [CONTEXT_PREFIX] => 
+    [REQUEST_SCHEME] => https
+    [DOCUMENT_ROOT] => /home/heartf/heartf.com/public_html/school
+    [REMOTE_ADDR] => 59.129.225.81
+    [SERVER_PORT] => 443
+    [SERVER_ADDR] => 103.141.97.55
+    [SERVER_NAME] => school.heartf.com
+    [SERVER_SOFTWARE] => Apache
+    [SERVER_SIGNATURE] => 
+    [HTTP_COOKIE] => _ga_XV0DYRRV50=GS1.2.1710086516.10.1.1710088055.0.0.0; _ga_KKDS2Y063Q=GS1.1.1713287075.2.0.1713287075.60.0.0; _ga_TF7VQ3P4WK=GS1.1.1714084006.2.0.1714084006.0.0.0; _ga_KD8MNG8J43=GS1.1.1717313420.1.1.1717313878.0.0.0; _ga_ZQKCLRKB5Q=GS1.1.1717351745.9.0.1717351745.0.0.0; _ga_YEYDQZ3W8X=GS1.1.1719220372.1.1.1719220390.0.0.0; _ga_7DRL21B865=GS1.1.1720872003.23.0.1720872003.0.0.0; _ga_ZV0WQXHT00=GS1.1.1722233105.2.0.1722233105.0.0.0; _ga_4GVF9RW05T=GS1.1.1722522285.2.0.1722522298.0.0.0; _ga_PWQM3ESTQV=GS1.1.1723017405.5.1.1723018616.0.0.0; _ga_4PK6XBV3BP=GS1.1.1723017255.7.1.1723018626.0.0.0; _ga_24KCBZETC9=GS1.1.1723406958.52.0.1723406958.0.0.0; _ga_59MKZTFML1=GS1.1.1727270789.28.1.1727270799.0.0.0; _ga_0MQS3FYDHL=GS1.2.1727424687.412.1.1727424687.60.0.0; _ga_M2QG0JN89S=GS1.1.1727424687.2.0.1727424695.0.0.0; _gcl_au=1.1.1163650030.1727512173; _clck=bt70y4%7C2%7Cfpk%7C0%7C1567; _fbp=fb.1.1727512174353.581348137187152189; _ga_W99M1L8DL1=GS1.1.1727512173.1.0.1727512190.0.0.0; _ga_LX121NPD7K=GS1.1.1727550958.155.1.1727551059.60.0.2070806829; _ga_DN9TZ3Q2LG=GS1.1.1727550958.780.1.1727551059.0.0.0; _gid=GA1.2.411771761.1728707031; _ga_65VNZXJB15=GS1.1.1728713885.1.1.1728714015.0.0.0; _ga=GA1.2.1820271897.1664403588; QHMSSID1=44ade7ab2acff0ecb452c90cb7e71651; _ga_HE2HZGS8HL=GS1.2.1728754716.40.1.1728754716.0.0.0
+    [HTTP_PRIORITY] => u=0, i
+    [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9,ja-JP;q=0.8,ja;q=0.7
+    [HTTP_SEC_FETCH_DEST] => document
+    [HTTP_SEC_FETCH_USER] => ?1
+    [HTTP_SEC_FETCH_MODE] => navigate
+    [HTTP_SEC_FETCH_SITE] => none
+    [HTTP_ACCEPT] => text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    [HTTP_USER_AGENT] => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36
+    [HTTP_UPGRADE_INSECURE_REQUESTS] => 1
+    [HTTP_SEC_CH_UA_PLATFORM] => "macOS"
+    [HTTP_SEC_CH_UA_MOBILE] => ?0
+    [HTTP_SEC_CH_UA] => "Not)A;Brand";v="99", "Google Chrome";v="127", "Chromium";v="127"
+    [HTTP_CONNECTION] => close
+    [HTTP_X_FILE_TYPE] => normal
+    [HTTP_X_UA_DEVICE] => pc
+    [HTTP_X_FAILURE_CACHE_TIME] => 0
+    [HTTP_X_ACCEL_EXPIRES] => 60
+    [HTTP_X_WP_ACCESS] => 0
+    [HTTP_X_SERVER_ADDRESS] => 103.141.97.55
+    [HTTP_X_REAL_IP] => 59.129.225.81
+    [HTTP_X_FORWARDED_SSL] => on
+    [HTTP_X_FORWARDED_PORT] => 443
+    [HTTP_X_FORWARDED_HOST] => school.heartf.com
+    [HTTP_X_FORWARDED_PROTO] => https
+    [HTTP_X_FORWARDED_FOR] => 59.129.225.81
+    [HTTP_HOST] => school.heartf.com
+    [AllowRestApi] => 1
+    [Ngx_Cache_StaticMode] => 1
+    [Ngx_Cache_NormalFile] => 1
+    [FailureCacheTime] => 0
+    [HTTPS] => on
+    [UNIQUE_ID] => ZwuBaDhGD3reK0D5_LmelAAAAeg
+    [MEF_PROXY_ADDR] => 103.141.97.55
+    [FCGI_ROLE] => RESPONDER
+    [PHP_SELF] => /kanaeru/rep.php
+    [REQUEST_TIME_FLOAT] => 1728807272.4302
+    [REQUEST_TIME] => 1728807272
+)
+
+Generated hash data: 2:item_jp_new_12:tx_8387:1728807272:lionking
+Hash: 5d9181b1155971ce7da09262f002b7c21ba836961349f42baf5edf9fbfef8967API Response: API Success: Redirecting to thanks page

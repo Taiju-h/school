@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ sys/fwd.php?code=$1
+</IfModule>
+
+<FilesMatch "\.txt$">
+        Order allow,deny
+        Deny from all
+</FilesMatch>
+

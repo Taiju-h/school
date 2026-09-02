@@ -1,0 +1,420 @@
+
+[2026-07-05 21:21:11] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+user_id: NULL
+action: NULL
+transaction_id: NULL
+timestamp: NULL
+hash: NULL
+
+[2026-07-05 21:23:42] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+user_id: NULL
+action: NULL
+transaction_id: NULL
+timestamp: NULL
+hash: NULL
+
+[2026-07-05 21:23:42] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+user_id: NULL
+action: NULL
+transaction_id: NULL
+timestamp: NULL
+hash: NULL
+
+[2026-07-05 21:23:56] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+user_id: NULL
+action: NULL
+transaction_id: NULL
+timestamp: NULL
+hash: NULL
+
+[2026-07-05 21:23:56] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+user_id: NULL
+action: NULL
+transaction_id: NULL
+timestamp: NULL
+hash: NULL
+
+[2026-07-05 21:31:34] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260705:1ff27ecc","timestamp":"1783254694","hash":"3035fb40d157f955cf805f26ba00c8d9862d62fe3218f9e86340e4203db62ecd","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-05 21:33:08] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260705:1ff27ecc","timestamp":"1783254788","hash":"dc2134c74cbb0c79e2e7918de7a19fb17481b97f11b53a73d4afcf77d03b71e3","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+
+[2026-07-05 21:35:11] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260705:1ff27ecc","timestamp":"1783254911","hash":"64764e0ac6ab6f24ee7f728160feab494f74a126aba48b8016aa3809d653cfc7","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+
+[2026-07-05 21:41:42] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260705:1ff27ecc","timestamp":"1783255302","hash":"5a39f50f289f2dc685ff48a557d51b0998a9d892b720277c98b94b7ddc6ce4bb","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+
+[2026-07-05 21:43:52] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260705:1ff27ecc","timestamp":"1783255431","hash":"0e6b0a1e16d2e5b2806943b0b64641c691b2a9b47e153aecf395322072ca1f25","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+[2026-07-05 21:43:52] 【API通知】未登録ユーザー(ID: 2)のため自動登録します
+
+[2026-07-06 00:53:19] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260706:734aa2db","timestamp":"1783266799","hash":"04561d89ec0e8600df939ac367e69e7a6e2d9f0652f00585689e3d0644999148","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+[2026-07-06 00:53:19] 【API通知】未登録ユーザー(ID: 2)のため自動登録します
+
+[2026-07-06 02:51:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260706:734aa2db","timestamp":"1783273859","hash":"6ab5028037fd01aff3a37bc1239fc069bb802cc8a89d324aadb4277a0f51ad08","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+
+[2026-07-06 03:32:44] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":2,"action":"sync_telecom","transaction_id":"2:subscription:batch:20260706:734aa2db","timestamp":"1783276364","hash":"e7b1d0e0bb61537c0da679fb75734f549852d11dad0e149c244da664436e485e","price":980,"credit_amount":100}
+【受信POST配列】: Array
+(
+)
+
+
+[2026-07-09 21:56:14] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-09 21:56:14] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-10 07:05:03] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-10 07:05:03] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-12 00:00:00] =============================
+【通信メソッド】: GET
+【Content-Type】: application/json
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-12 01:16:34] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":101,"action":"cancel","transaction_id":"101:subscription:cancel:20260712","timestamp":"1783786594","hash":"44c4cd0c9cbb57e78c3d23af386b659a80933774957a542d8ed375e910a58dea"}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-12 15:04:30] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"user_id":101,"action":"cancel","transaction_id":"101:subscription:cancel:20260712","timestamp":"1783836270","hash":"92d0dfa0219743bc40fd983b707e2b8e09b13b0d6dbe43ffd9dedb90508cf2d7"}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-14 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":20,"hash":"0805ed4c0b2e771d4bba10fd16ee3e90f309a2d895a08faef2113d75d29af196","price":980,"timestamp":"1783954800","transaction_id":"4:subscription:initial:20260713:c7ea1eff","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-15 21:57:30] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-15 21:57:30] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-16 21:11:02] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-16 21:11:02] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-28 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":34,"hash":"00ad2a72f5e2d11173699a12ec39b868ee02103f798aa54c347a8ff9182f711d","price":980,"timestamp":"1785164400","transaction_id":"4:subscription:initial:20260727:2b4755ff","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-28 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":34,"hash":"ac88cfae86902f404d81aba269e20e2c0d6b1e91018429b2c03577b2c9e6f371","price":1980,"timestamp":"1785164400","transaction_id":"4:subscription:initial:20260727:7ac102ca","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-28 02:03:31] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-28 02:03:31] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"da774376f69c6dd52b2ff84f04fd710fd10167bd59335818e644f88d9a15d066","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:96d69505","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"76ac33253690276456d23c16f551f4eec3c2e29f2ac9538d66880d160fe2681a","price":3980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:0433019e","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"41de322b0d6a10b94723302f6342586edb8519e192a8de31ff09c54998deca9e","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:3eaba6b7","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"0466a8be9048616d9512c0f38ae2da7cff9489a525b25cc1c5275852e3049983","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:f3376a29","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"264108396eb03785f20ee4774cd136d2d87aa1c3263138334815317d38be440d","price":3980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:54e19b9d","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"8a9cb7d15f0c15e4383c639d3f8914453df103772352ae1eb39f6a40ef942a8b","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:5f81900f","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"3da8e946f21d5acb913c5aa8d6a3a6d6612a8b7d949925d613c9daf6ca13e2fb","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:9e3f6c7c","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"9626ccfdae608bd3c9022ed2a094777bcf0cce867e91d72b9690af5c1f254295","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:cf5d786c","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-29 00:00:00] =============================
+【通信メソッド】: POST
+【Content-Type】: application/json
+【受信Raw JSON】: {"action":"sync_telecom","credit_amount":16,"hash":"ce9f2d3369d1535c7cd33d1a0a3a2232e696ce1dff625b30cfdccbd48f5a2569","price":980,"timestamp":"1785250800","transaction_id":"4:subscription:initial:20260728:51a01348","user_id":4}
+【受信POST配列】: Array
+(
+)
+
+【API認証エラー】ハッシュ不一致
+
+[2026-07-30 22:27:40] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】
+
+[2026-07-30 22:27:41] =============================
+【通信メソッド】: GET
+【Content-Type】: Unknown
+【受信Raw JSON】: 
+【受信POST配列】: Array
+(
+)
+
+【⚠️パラメータ不足エラー】

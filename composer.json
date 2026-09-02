@@ -1,0 +1,7 @@
+{
+  "require": {
+    "php": ">=5.3.0",
+    "ext-mbstring": "*",
+    "firebase/php-jwt": "^4.0"
+  }
+}

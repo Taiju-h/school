@@ -1,0 +1,53 @@
+<?php
+$errmsg = $data['errmsg'];
+$p = $data['data'];
+$id = $p['id'];
+?>
+<h2><?php echo $s->html($p['name'])?></h2>
+<p style="text-align:right;"><a href="button.php?id=<?php echo $id?>">購入ボタン</a> ←右クリック＆コピー、 <a href="edit.php?id=<?php echo $id?>">編集</a>&nbsp;<a href="del.php?id=<?php echo $id?>">削除</a> </p>
+<table>
+  <tr>
+    <th>商品名</th>
+    <td class="textleft"><?php echo  $p['name']?></td>
+  </tr>
+  <tr>
+    <th>価格</th>
+    <td class="textleft"><?php echo  $p['price']?></td>
+  </tr>
+  <tr>
+    <th>キャンセル後ページURL</th>
+    <td class="textleft"><?php echo  $p['cancel_url']?></td>
+  </tr>
+  <tr>
+    <th>購入後表示ページURL（ありがとうページ）</th>
+    <td class="textleft"><?php echo  $p['thankyou_url']?></td>
+  </tr>
+  <tr>
+    <th>購入後の案内ボタン表示文字</th>
+    <td class="textleft"><?php echo  $p['notice_button']?></td>
+  </tr>
+  <tr>
+    <th>自動返信　送信者名</th>
+    <td class="textleft"><?php echo  $p['sender_name']?></td>
+  </tr>
+  <tr>
+    <th>自動返信　送信者メールアドレス</th>
+    <td class="textleft"><?php echo  $p['sender_mailaddress']?></td>
+  </tr>
+  <tr>
+    <th>自動返信　メール件名</th>
+    <td class="textleft"><?php echo  $p['mail_subject']?></td>
+  </tr>
+  <tr>
+    <th>自動返信　メール本文</th>
+    <td class="textleft"><pre><?php echo  $p['mail_body']?></pre></td>
+  </tr>
+  <tr>
+    <th>決済お知らせ(管理者宛)メールの件名</th>
+    <td class="textleft"><?php echo  $p['notice_title']?></td>
+  </tr>
+  <tr>
+    <th>メルマガ登録のデータなど</th>
+    <td class="textleft"><pre><?php echo  $p['post_data']?></pre></td>
+  </tr>
+</table>

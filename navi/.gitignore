@@ -1,0 +1,18 @@
+db_config.php
+*.log
+.DS_Store
+
+# Server-local settings
+/config.php
+/subscription_config.php
+/db_config.php
+.env
+.env.*
+*.log
+
+# Local secrets and legacy test helpers
+/legacy_private.php
+/api.php
+/receive_test.php
+/TRACE_README.txt
+/UPLOAD_README.txt

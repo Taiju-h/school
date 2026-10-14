@@ -1,6 +1,7 @@
 <?php
 // 占術コースは買い切りです。定額クレジットの処理は呼び出しません。
 require_once __DIR__ . '/subscription_lib.php';
+require_once __DIR__ . '/course_payment_lib.php';
 subscription_start_session();
 header('Cache-Control: no-store');
 header('Referrer-Policy: no-referrer');
@@ -21,7 +22,11 @@ $courses = [
     'course_lenormand' => 'ルノルマンカード',
     'course_sukuyo' => '宿曜占星術',
 ];
-$price = 2980;
+$pricingPlan = defined('COURSE_PRICING_PLAN') ? COURSE_PRICING_PLAN : 'special';
+$pricing = course_pricing($pricingPlan);
+$price = $pricing['price'];
+$priceLabel = number_format($price) . '円';
+$coursePage = $pricing['page'];
 $request = ($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST' ? $_POST : $_GET;
 $scalar = static function (array $values, string $key, string $default = ''): string {
     return isset($values[$key]) && is_string($values[$key]) ? $values[$key] : $default;
@@ -75,6 +80,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
             'email' => (string)$decoded->user->account,
             'item_name' => $selected,
             'course_name' => $courses[$selected],
+            'pricing_plan' => $pricingPlan,
             'price' => $price,
             'payment_type' => 'one_time',
             'callback' => $callback,
@@ -136,11 +142,11 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
 <header><h1>占術コース購入</h1></header>
 <main>
     <div class="intro">
-        <span class="tag">買い切り・1回払い</span>
-        <p>購入するコースを選んでください。各コース <strong>2,980円（税込）</strong> です。</p>
+        <span class="tag">買い切り・1回払い ／ <?= $escape($pricing['label']) ?></span>
+        <p>購入するコースを選んでください。各コース <strong><?= $escape($priceLabel) ?>（税込）</strong> です。</p>
     </div>
     <?php if ($error !== ''): ?><p class="error" role="alert"><?= $escape($error) ?></p><?php endif; ?>
-    <form action="course.php" method="post" target="_top">
+    <form action="<?= $escape($coursePage) ?>" method="post" target="_top">
         <input type="hidden" name="token" value="<?= $escape($token) ?>">
         <input type="hidden" name="callback" value="<?= $escape($callback) ?>">
         <input type="hidden" name="navi_mode" value="<?= $escape($mode) ?>">
@@ -152,7 +158,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
                 <label class="option<?= $selected === $code ? ' selected' : '' ?>">
                     <input type="radio" name="item_name" value="<?= $escape($code) ?>" data-name="<?= $escape($name) ?>" required<?= $selected === $code ? ' checked' : '' ?>>
                     <span class="course-name"><?= $escape($name) ?></span>
-                    <span class="price">2,980円 <span class="tax">（税込）</span></span>
+                    <span class="price"><?= $escape($priceLabel) ?> <span class="tax">（税込）</span></span>
                 </label>
                 <?php endforeach; ?>
             </div>
@@ -160,7 +166,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
         <div class="purchase">
             <div class="summary" aria-live="polite">
                 <p id="selected-course"><?= $selected !== '' ? $escape($courses[$selected]) : 'コースを選択してください' ?></p>
-                <strong id="selected-price"><?= $selected !== '' ? '2,980円' : '—' ?></strong>
+                <strong id="selected-price"><?= $selected !== '' ? $escape($priceLabel) : '—' ?></strong>
             </div>
             <p class="note">お支払いは今回の1回のみです。毎月の課金・自動更新はありません。</p>
             <button type="submit"<?= $token === '' ? ' disabled' : '' ?>>選択したコースを購入する</button>
@@ -179,7 +185,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
             radios[i].parentNode.classList.toggle('selected', radios[i].checked);
             if (radios[i].checked) {
                 document.getElementById('selected-course').textContent = radios[i].getAttribute('data-name');
-                document.getElementById('selected-price').textContent = '2,980円';
+                document.getElementById('selected-price').textContent = <?= json_encode($priceLabel, JSON_UNESCAPED_UNICODE) ?>;
             }
         }
     }

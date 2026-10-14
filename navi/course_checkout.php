@@ -13,14 +13,16 @@ $fields = course_one_time_payment_fields($coursePurchase, $transactionId);
 $_SESSION['course_payment'] = [
     'user_id' => $coursePurchase['user_id'],
     'item_name' => $coursePurchase['item_name'],
-    'price' => 2980,
+    'price' => $coursePurchase['price'],
+    'pricing_plan' => $coursePurchase['pricing_plan'],
     'transaction_id' => $transactionId,
     'created_at' => time(),
 ];
 subscription_log('course_checkout', [
     'user_id' => $coursePurchase['user_id'],
     'item_name' => $coursePurchase['item_name'],
-    'price' => 2980,
+    'price' => $coursePurchase['price'],
+    'pricing_plan' => $coursePurchase['pricing_plan'],
     'transaction_id' => $transactionId,
 ]);
 session_write_close();
@@ -55,18 +57,18 @@ session_write_close();
         <table>
             <thead><tr><th scope="col">商品名</th><th scope="col">料金（税込）</th></tr></thead>
             <tbody>
-                <tr><td><?= $escape($coursePurchase['course_name']) ?></td><td>2,980円</td></tr>
-                <tr class="total"><td>合計</td><td>2,980円</td></tr>
+                <tr><td><?= $escape($coursePurchase['course_name']) ?></td><td><?= $escape($priceLabel) ?></td></tr>
+                <tr class="total"><td>合計</td><td><?= $escape($priceLabel) ?></td></tr>
             </tbody>
         </table>
-        <p>買い切りの1回払いです。毎月の課金・自動更新はありません。</p>
+        <p><?= $escape($pricing['label']) ?>・買い切りの1回払いです。毎月の課金・自動更新はありません。</p>
         <form action="https://secure.telecomcredit.co.jp/inetcredit/secure/order.pl" method="post" target="_top">
             <?php foreach ($fields as $name => $value): ?>
                 <input type="hidden" name="<?= $escape($name) ?>" value="<?= $escape((string)$value) ?>">
             <?php endforeach; ?>
             <button type="submit">クレジットカード決済画面へ</button>
         </form>
-        <a class="back" href="course.php?<?= $escape(http_build_query([
+        <a class="back" href="<?= $escape($coursePage) ?>?<?= $escape(http_build_query([
             'token' => $token,
             'callback' => $coursePurchase['callback'],
             'navi_mode' => $coursePurchase['navi_mode'],
